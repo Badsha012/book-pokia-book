@@ -11,7 +11,7 @@ const Home = () => {
         <div className='py-10 '>
             
             <Banner></Banner>
-            <Books></Books>
+            <Books data={data}></Books>
             
         </div>
     );
