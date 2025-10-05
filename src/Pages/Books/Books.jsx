@@ -1,20 +1,28 @@
-import React, { useEffect, useState } from 'react';
+import React, {} from 'react';
+import { Suspense } from 'react';
+import Book from '../Book/Book';
 
 const Books = () => {
- const [allBooks,setAllbooks]=useState([]);
+//  const [allBooks,setAllbooks]=useState([]);
 
- useEffect(() =>{
- fetch("bookData.json")
- .then(res =>res.json())
- .then(data =>{
-   console.log(data); 
- })
+//  useEffect(() =>{
+//  fetch("bookData.json")
+//  .then(res =>res.json())
+//  .then(data =>{
+//    console.log(data); 
+//  })
 
- } ,[])
+//  } ,[])
+
+// const bookPrimise=fetch('./bookData.json').then(res=>res.json())
 
     return (
         <div>
-            <h1>I am a book</h1>
+            <h1 className='text-3xl text-center p-6'>Books</h1>
+          <Suspense fallback={<span>loading...</span>}>
+        <Book></Book>
+          </Suspense>
+
         </div>
     );
 };
