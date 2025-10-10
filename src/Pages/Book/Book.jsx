@@ -40,7 +40,7 @@ const Book = ({singleBook}) => {
 // : 
 // 1925
 
-const {bookName,author,category,image ,rating}=singleBook
+const {bookName,category,image ,rating}=singleBook
 
     console.log(singleBook);
     return (
