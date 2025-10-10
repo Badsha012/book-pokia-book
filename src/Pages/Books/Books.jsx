@@ -3,18 +3,7 @@ import { Suspense } from 'react';
 import Book from '../Book/Book';
 
 const Books = ({data}) => {
-//  const [allBooks,setAllbooks]=useState([]);
 
-//  useEffect(() =>{
-//  fetch("bookData.json")
-//  .then(res =>res.json())
-//  .then(data =>{
-//    console.log(data); 
-//  })
-
-//  } ,[])
-
-// const bookPrimise=fetch('./bookData.json').then(res=>res.json())
 
     return (
         <div>
